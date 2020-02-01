@@ -25,11 +25,7 @@ global.blackListCheck = function(itemToTest, event, player) {
                     }
                 }
                 itemToTest.count = 0;
-                if (event.cancel) {
-                    if (event.canCancel()) {
-                        event.cancel();
-                    }
-                }
+                event.cancel();
                 break;
             default:
                 break;
